@@ -10,8 +10,8 @@ function App() {
             <BrowserRouter>
             {/* <div className={'h-screen w-full'}>
                 <Header/> */}
-                <div className={'h-screen w-screen flex justify-center items-center bg-ashColor'}>
-                    <div className={'w-ful lg:w-1/2 min-h-[300px] bg-white rounded-lg'}>
+                <div className={'h-screen flex justify-center items-center bg-ashColor'}>
+                    <div className={'w-full lg:w-1/2 min-h-[300px] bg-white rounded-lg'}>
                         <div className={'min-h-[calc(300px-137px)] p-2'}>
                             <Routes>
                                 <Route path={route.ROOT_PATH} element={<Home/>} />

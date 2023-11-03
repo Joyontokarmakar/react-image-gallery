@@ -7,5 +7,5 @@
     @apply underline text-primaryColor font-bold
 }
 .divStyle{
-    @apply w-full border border-red-500 rounded-lg flex justify-center items-center
+    @apply w-full border border-red-500 rounded-lg flex justify-center items-center first:h-[230px] h-[111px] first:col-span-2 first:row-span-2 col-span-1 overflow-hidden
 }

@@ -1,46 +1,46 @@
 const Images = [
      {
-          id: 1,
+          id: "img1",
           path: "/images/image-1.webp"
      },
      {
-          id: 2,
+          id: "img2",
           path: "/images/image-2.webp"
           },
      {
-          id: 3,
+          id: "img3",
           path: "/images/image-3.webp"
      },
      {
-          id: 4,
+          id: "img4",
           path: "/images/image-4.webp"
      },
      {
-          id: 5,
+          id: "img5",
           path: "/images/image-5.webp"
      },
      {
-          id: 6,
+          id: "img6",
           path: "/images/image-6.webp"
      },
      {
-          id: 7,
+          id: "img7",
           path: "/images/image-7.webp"
      },
      {
-          id: 8,
+          id: "img8",
           path: "/images/image-8.webp"
      },
      {
-          id: 9,
+          id: "img9",
           path: "/images/image-9.webp"
      },
      {
-          id: 10,
+          id: "img10",
           path: "/images/image-10.jpeg"
      },
      {
-          id: 11,
+          id: "img11",
           path: "/images/image-11.jpeg"
      }
 ];
