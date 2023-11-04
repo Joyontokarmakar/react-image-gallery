@@ -3,7 +3,7 @@ import images from "../Images.js"
 import { useEffect, useState } from "react";
 export const Home = () => {
     const [isBrowser, setIsBrowser] = useState(false);
-
+    const [count, setCount] = useState([])
     useEffect(() => {
         if (typeof window !== "undefined") {
             setIsBrowser(true);
@@ -20,10 +20,15 @@ export const Home = () => {
         setImgItem(updatedList);
     };
 
+    const selectImg = (id) => {
+        setCount(current => [...current, id])   
+    }
+
     return (
         <div>
             <div className="p-5 flex justify-center">
                 <div className="">
+                    {count.length}
                     <DragDropContext onDragEnd={handleDrop}>
                         <div>
                             {isBrowser ? (
@@ -37,10 +42,20 @@ export const Home = () => {
                                                             ref={provided.innerRef}
                                                             {...provided.draggableProps}
                                                             {...provided.dragHandleProps}
+                                                            className={'divStyle'}
                                                         >
-                                                            <div className={'divStyle'} key={index}>
-                                                                <img src={item.path} alt={item.id} className={'w-full h-full'}/>
-                                                            </div>
+                                                            <img 
+                                                                src={item.path} 
+                                                                alt={item.id} 
+                                                                className={'w-full h-full'}
+                                                                />
+                                                            <input 
+                                                                type="checkbox" 
+                                                                name={item.id} 
+                                                                id={item.id} 
+                                                                onClick={()=>selectImg(item.id)} 
+                                                                className="absolute top-2 left-2"
+                                                            />
                                                         </div>
                                                     )}
                                                 </Draggable>
